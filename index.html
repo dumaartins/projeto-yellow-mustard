@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parallel Glasses | Rock Autoral</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Parallel Glasses</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#musicas">Músicas</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle">🌓</button>
+    <button id="menuToggle" class="menu-toggle">☰</button>
+  </header>
+
+  <section class="hero" id="hero">
+    <h1>Parallel Glasses</h1>
+    <p>O som que quebra o silêncio. Rock moderno com alma clássica.</p>
+    <button onclick="scrollToMusic()">Ouça Agora</button>
+  </section>
+
+<section id="sobre" class="sobre">
+  <div class="sobre-container">
+    <div class="sobre-texto">
+      <h2>Sobre a Banda</h2>
+      <p>Formada em 2025, Parallel Glasses mistura influências do rock alternativo e indie moderno, criando uma experiência sonora única e intensa.</p>
+      <p><strong>Influências:</strong> Arctic Monkeys, The Strokes, Royal Blood, Foo Fighters.</p>
+    </div>
+    <div class="sobre-imagem">
+      <img src="./assets/logo-banda.jpg" alt="Foto da banda Parallel Glasses">
+    </div>
+  </div>
+</section>
+
+  <section id="musicas" class="musicas">
+    <h2>Músicas</h2>
+    <div class="videos">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DHOnA7dW00I" title="Parallel Glasses Música 2" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Momentos da Banda</h2>
+    <div class="fotos">
+      <img src="assets/show1.jpg" alt="Show Parallel Glasses 1">
+      <img src="assets/show2.jpg" alt="Show Parallel Glasses 2">
+      <img src="assets/show3.jpg" alt="Show Parallel Glasses 3">
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato direto com a banda:</p>
+    <div class="whats">
+      <a href="https://wa.me/5515997337103" target="_blank" class="btn-whats">💬 João Vitor</a>
+      <a href="https://wa.me/5515997324215" target="_blank" class="btn-whats">💬 João Gabriel</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="https://www.instagram.com/parallelglasses" target="_blank" class="social-link">
+        <img src="assets/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.youtube.com/@parallelglasses" target="_blank" class="social-link">
+        <img src="assets/youtube.svg" alt="YouTube">
+      </a>
+    </div>
+    <p>© 2025 Parallel Glasses — Todos os direitos reservados.</p>
+  </footer>
+
+  <audio id="player" src="assets/musica.mp3" controls></audio>
+  
+</body>
+</html>
